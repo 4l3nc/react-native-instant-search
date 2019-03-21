@@ -1,0 +1,44 @@
+{
+  "name": "ReactInstantSearch",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "babel-preset-react-native": "4.0.0",
+    "jest": "21.2.1",
+    "jest-expo": "24.0.0",
+    "react-native-scripts": "1.11.1",
+    "react-test-renderer": "16.2.0"
+  },
+  "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
+  "scripts": {
+    "start": "react-native-scripts start",
+    "build": "echo \"Error: no build specified\" && exit 0",
+    "eject": "react-native-scripts eject",
+    "android": "react-native-scripts android",
+    "ios": "react-native-scripts ios",
+    "test": "jest"
+  },
+  "jest": {
+    "preset": "jest-expo",
+    "transformIgnorePatterns": [
+      "node_modules/(?!react|@expo|expo|@ptomasroos|react-native-router-flux|mobx-react)"
+    ],
+    "setupFiles": [
+      "../../../../shim.js",
+      "./shim-react-native.js"
+    ]
+  },
+  "dependencies": {
+    "expo": "26.0.0",
+    "prop-types": "15.6.0",
+    "react": "16.2.0",
+    "react-dom": "16.2.0",
+    "react-instantsearch": "^5.4.0",
+    "react-instantsearch-theme-algolia": "latest",
+    "react-native": "0.54.2",
+    "react-native-modal-dropdown": "0.6.0",
+    "react-native-router-flux": "4.0.0-beta.28",
+    "react-native-star-rating": "1.0.8",
+    "react-native-vector-icons": "4.5.0"
+  }
+}
